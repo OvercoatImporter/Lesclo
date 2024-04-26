@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesclo International</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		
+		<!-- Adobe Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/dgu3hyi.css">
+		
+		<!-- style.css -->
+		<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body style="font-family: 'quasimoda', sans-serif">
+		<nav id="site-desktop-header" class="p-3 px-md-4 mb-3 fixed-top navbar-anim d-md-block d-xs-none">
+			<ul class="nav justify-content-center align-content-center">
+				<li class="nav-item mx-2 d-flex" style="place-items: center;">
+					<a class="nav-link p-2 text-white font-weight-bold d-flex" href="#hero" style="place-items: center;">
+						<svg viewBox="0 0 440 378.01" fill="#fff" width="21px" height="21px">
+							<path class="cls-1" d="M220,0L0,198.01h60v180h120v-120h80v120h120v-180h60L220,0Z"/>
+						</svg>
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold" href="#about">ABOUT US</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold" href="#location">LOCATION &#38; HOURS</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold" href="#contact">CONTACT US</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="mobile-header-background" class="d-md-none d-xs-block navbar-anim" style="opacity: 0%;"></div>
+		<label class="hamburger d-md-none" onClick="toggleNav()">
+			<input id="site-mobile-toggle" type="checkbox">
+			<svg viewBox="0 0 32 32">
+				<path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+				<path class="line" d="M7 16 27 16"></path>
+			</svg>
+		</label>
+		<nav id="site-mobile-header" class="d-md-none d-xs-block navbar-anim">
+			<ul class="nav pt-4 mt-5 pt-md-0  mt-md-0 justify-content-center align-content-center">
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold"
+						 href="#about"
+						 onClick="closeNav()">ABOUT US</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold"
+						 href="#location"
+						 onClick="closeNav()">LOCATION &#38; HOURS</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold"
+						 href="#contact"
+						 onClick="closeNav()">CONTACT US</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- Sections -->
+		<div data-spy="scroll" data-target="#site-desktop-header" data-offset="0">
+			<section
+							 id="hero"
+							 class="vh-100"
+							 style="background-image: url(images/Hero.jpg);
+											background-size: cover;
+											background-position: 50% 40%;">
+				<div class="vh-100 w-md-50 w-sm-75 w-xs-75 m-auto text-center align-content-center">
+					<img src="images/Lesclo Light.svg" alt="Lesclo Logo" style="filter: drop-shadow(2px 2px 2px black)">
+					<!--
+						<h1 class="display-2 text-white">LESCLO</h1>
+						<p class="h2 text-white">International</p>
+					-->
+				</div>
+			</section>
+			
+			<section id="about" style="background-color: #f1f3f4;">
+				<div class="container p-5 w-lg-50 w-md-75 text-center">
+					<h1 class="p-3 h2 font-weight-bold">ABOUT US</h1>
+					<p class="px-3 mx-auto">
+						Here at Lesclo International, we excel in the precision cutting and expert packaging of premium wiping cloths sourced from leading European suppliers. With a dedicated team of 10 skilled employees drawn from our local community, we are committed to fostering sustainable employment opportunities while delivering top-quality industrial wiping solutions. Discover the difference with Lesclo International today!
+					</p>
+				</div>
+				<img class="sub-img about-img"
+						 src="https://images.pexels.com/photos/8478221/pexels-photo-8478221.jpeg"
+						 alt="img">
+			</section>
+			
+			<section id="location" style="background-color: #f1f3f4;">
+				<div class="container p-5 text-center">
+					<h1 class="p-3 h2 font-weight-bold">LOCATION &#38; HOURS</h1>
+					<p class="mb-4">
+						Visit us during business hours to explore our range of industrial wiping cloth solutions, meet our team, and discuss your bulk ordering needs.
+					</p>
+					<div class="row row-cols-xs-1 row-cols-md-2">
+						<div class="col-6 text-center">
+							<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.141162638882!2d28.377637475538712!3d-25.83189337730788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955c8f70bcff49%3A0xe9b921622d2f108!2s398%20Zwavelpoort%20St!5e0!3m2!1sen!2sza!4v1713862644850!5m2!1sen!2sza"
+											style="border: #e1e1e1 1px solid; aspect-ratio: 12/7; width: 100%;"
+											allowfullscreen="false"
+											loading="lazy"
+											referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+						<div class="col-6 mt-3 mt-md-0 text-center" style="place-items: center;">
+							<div>
+								<p>Plot 398, Zwavelpoort, Pretoria</p>
+								<p>Mon - Fri: 8am - 5pm</p>
+								<p>Saturday: 8am - 3pm</p>
+								<p>Sunday: 8am - 1pm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="sub-img location-img"
+						 src="https://images.pexels.com/photos/4481943/pexels-photo-4481943.jpeg"
+						 alt="img">
+			</section>
+			
+			<section id="contact" style="background-color: #f1f3f4;">
+				<div class="container p-5 w-lg-50 w-md-75 text-center">
+					<h1 class="p-3 h2 text-center font-weight-bold">CONTACT US</h1>
+					<p>
+						Have questions or ready to place an order? Contact the Lesclo International team today! We are here to assist you with any inquiries regarding our products or bulk ordering options. Get in touch with us for personalized assistance and exceptional service. We look forward to hearing from you!
+					</p>
+					<br>
+					<p>Pine Papenfus : <a href="tel:+27826007776">082 600 7776</a></p>
+					<p>Anna Goosen : <a href="tel:+27836001909">083 600 1909</a></p>
+					<p><a href="mailto:ann@lesclointernational.co.za">ann@lesclointernational.co.za</a></p>
+				</div>
+				<img class="sub-img contact-img"
+						 src="images/img3.png"
+						 alt="img">
+			</section>
+    </div>
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+		
+		<!-- Navbar scroll animations -->
+		<script src="js/nav-scroll.js"></script>
+  </body>
+</html>
