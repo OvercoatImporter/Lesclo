@@ -38,6 +38,7 @@
 			</ul>
 		</nav>
 		<div id="mobile-header-background" class="d-md-none d-xs-block navbar-anim" style="opacity: 0%;"></div>
+		
 		<label class="hamburger d-md-none" onClick="toggleNav()">
 			<input id="site-mobile-toggle" type="checkbox">
 			<svg viewBox="0 0 32 32">
@@ -45,8 +46,14 @@
 				<path class="line" d="M7 16 27 16"></path>
 			</svg>
 		</label>
+		
 		<nav id="site-mobile-header" class="d-md-none d-xs-block navbar-anim">
 			<ul class="nav pt-4 mt-5 pt-md-0  mt-md-0 justify-content-center align-content-center">
+				<li class="nav-item mx-2">
+					<a class="nav-link p-2 text-white font-weight-bold"
+						 href="#hero"
+						 onClick="closeNav()">HOME</a>
+				</li>
 				<li class="nav-item mx-2">
 					<a class="nav-link p-2 text-white font-weight-bold"
 						 href="#about"
@@ -64,6 +71,7 @@
 				</li>
 			</ul>
 		</nav>
+		
 		
 		<!-- Sections -->
 		<div data-spy="scroll" data-target="#site-desktop-header" data-offset="0">
@@ -90,7 +98,7 @@
 					</p>
 				</div>
 				<img class="sub-img about-img"
-						 src="https://images.pexels.com/photos/8478221/pexels-photo-8478221.jpeg"
+						 src="images/img1.jpeg"
 						 alt="img">
 			</section>
 			
@@ -121,7 +129,7 @@
 					</div>
 				</div>
 				<img class="sub-img location-img"
-						 src="https://images.pexels.com/photos/4481943/pexels-photo-4481943.jpeg"
+						 src="images/img2.jpeg"
 						 alt="img">
 			</section>
 			
