@@ -25,6 +25,7 @@ function toggleNav(){
 	
 	if (!menuButton.checked) {
 		navMenu.classList.add('mobile-nav-open');
+		navMenu.style.touchAction = 'none';
 		menuBackground.style.pointerEvents = 'all';
 		menuBackground.style.touchAction = 'none';
 		menuBackground.style.opacity = '50%';
@@ -33,6 +34,7 @@ function toggleNav(){
 	else if (menuButton.checked)
 	{
 		navMenu.classList.remove('mobile-nav-open');
+		navMenu.style.touchAction = 'auto';
 		menuBackground.style.pointerEvents = 'none';
 		menuBackground.style.touchAction = 'auto';
 		menuBackground.style.opacity = '0%';
@@ -46,6 +48,7 @@ function closeNav () {
 	const navMenu = document.querySelector('#site-mobile-header');
 	
 	navMenu.classList.remove('mobile-nav-open');
+	navMenu.style.touchAction = 'auto';
 	menuBackground.style.pointerEvents = 'none';
 	menuBackground.style.touchAction = 'auto';
 	menuBackground.style.opacity = '0%';
