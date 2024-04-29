@@ -114,10 +114,9 @@ footer div {
 }
 
 .hamburger svg {
-  /* The size of the SVG defines the overall size */
   height: 3rem;
-  /* Define the transition for transforming the SVG */
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+	filter: drop-shadow(1px 1px 1px black);
 }
 
 .line {
