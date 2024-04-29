@@ -177,6 +177,10 @@ footer a:hover {
 	width: 100%;
 }
 
+.card-text {
+	font-size: 1.2rem !important;
+}
+
 @media (min-width: 576px) {
 	body {
 		font-size: 1.2rem !important;
