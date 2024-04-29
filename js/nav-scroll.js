@@ -24,12 +24,14 @@ function toggleNav(){
 	
 	if (!menuButton.checked) {
 		navMenu.classList.add('mobile-nav-open');
+		menuBackground.style.pointerEvents = 'all';
 		menuBackground.style.opacity = '50%';
 		menuButton.checked = true;
 	}
 	else if (menuButton.checked)
 	{
 		navMenu.classList.remove('mobile-nav-open');
+		menuBackground.style.pointerEvents = 'none';
 		menuBackground.style.opacity = '0%';
 		menuButton.checked = false;
 	}
@@ -41,6 +43,7 @@ function closeNav () {
 	const navMenu = document.querySelector('#site-mobile-header');
 	
 	navMenu.classList.remove('mobile-nav-open');
+	menuBackground.style.pointerEvents = 'none';
 	menuBackground.style.opacity = '0%';
 	menuButton.checked = false;
 }
