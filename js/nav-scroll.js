@@ -2,6 +2,7 @@ const navHeader = document.querySelector('#site-desktop-header');
 const headerHeight = 72;
 
 const root = document.querySelector(':root');
+const body = document.querySelector('body');
 
 window.addEventListener('scroll', () => {
 	if (window.scrollY >= headerHeight){
@@ -25,6 +26,7 @@ function toggleNav(){
 	if (!menuButton.checked) {
 		navMenu.classList.add('mobile-nav-open');
 		menuBackground.style.pointerEvents = 'all';
+		menuBackground.style.touchAction = 'none';
 		menuBackground.style.opacity = '50%';
 		menuButton.checked = true;
 	}
@@ -32,6 +34,7 @@ function toggleNav(){
 	{
 		navMenu.classList.remove('mobile-nav-open');
 		menuBackground.style.pointerEvents = 'none';
+		menuBackground.style.touchAction = 'auto';
 		menuBackground.style.opacity = '0%';
 		menuButton.checked = false;
 	}
@@ -44,6 +47,7 @@ function closeNav () {
 	
 	navMenu.classList.remove('mobile-nav-open');
 	menuBackground.style.pointerEvents = 'none';
+	menuBackground.style.touchAction = 'auto';
 	menuBackground.style.opacity = '0%';
 	menuButton.checked = false;
 }
