@@ -75,6 +75,7 @@ footer div {
 
 #site-mobile-header {
 	position: fixed;
+	top: 0;
 	background: var(--site-navbar-color);
 	left: -75%;
 	width: 75%;
